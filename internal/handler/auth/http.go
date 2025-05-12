@@ -5,7 +5,7 @@ import (
 
 	"github.com/inidaname/mosque/auth_service/internal/service"
 	"github.com/inidaname/mosque/auth_service/internal/util"
-	"github.com/inidaname/mosque/protos"
+	"github.com/inidaname/mosque_location/protos"
 )
 
 type AuthHttpHandler struct {

@@ -9,7 +9,7 @@ import (
 	db "github.com/inidaname/mosque/auth_service/internal/db/models"
 	"github.com/inidaname/mosque/auth_service/internal/types"
 	"github.com/inidaname/mosque/auth_service/internal/util"
-	"github.com/inidaname/mosque/protos"
+	"github.com/inidaname/mosque_location/protos"
 )
 
 type AuthService struct {

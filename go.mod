@@ -12,6 +12,7 @@ require (
 )
 
 require (
+	github.com/inidaname/mosque_location v0.0.0-20250512174021-c3e4fd421ac3 // indirect
 	github.com/jackc/pgpassfile v1.0.0 // indirect
 	github.com/jackc/pgservicefile v0.0.0-20240606120523-5a60cdf6a761 // indirect
 	github.com/jackc/puddle/v2 v2.2.2 // indirect
@@ -20,7 +21,6 @@ require (
 )
 
 require (
-	github.com/inidaname/mosque v0.0.0-00010101000000-000000000000
 	github.com/rogpeppe/go-internal v1.14.1 // indirect
 	golang.org/x/net v0.35.0 // indirect
 	golang.org/x/sys v0.30.0 // indirect
@@ -28,5 +28,3 @@ require (
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20250218202821-56aae31c358a // indirect
 	google.golang.org/protobuf v1.36.6 // indirect
 )
-
-replace github.com/inidaname/mosque => ../
