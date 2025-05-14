@@ -11,10 +11,10 @@ RUN CGO_ENABLED=0 GOOS=linux go build ./cmd/server/main.go
 
 # Use a small alpine image for the final image
 FROM alpine:latest
-
 RUN apk --no-cache add ca-certificates
 
 WORKDIR /root/
+COPY /.env /.env
 COPY --from=builder /app/ .
 COPY --from=builder /app/internal/config ./internal/config
 

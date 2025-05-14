@@ -24,7 +24,7 @@ func (s *httpServer) Run() error {
 	authHandler := handler.NewHttpAuthHandler(*authService)
 	authHandler.RegisterRouter(router)
 
-	log.Println("Starting server on", s.app.Config.Server.HTTPPort)
+	log.Println("Starting server on", ":"+s.app.Config.Server.HTTPPort)
 
-	return http.ListenAndServe(s.app.Config.Server.HTTPPort, router)
+	return http.ListenAndServe(":"+s.app.Config.Server.HTTPPort, router)
 }
